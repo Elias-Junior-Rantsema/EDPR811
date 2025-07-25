@@ -2,65 +2,7 @@
 
 ## Abstract
 
-This document presents the design and implementation plan for an automated waste sorting system utilizing multi-sensor fusion technology. The system combines computer vision, capacitive sensing, and ind## 7. Innovation and Future Development
-
-### 7.1 Advanced Features for Future Implementation
-
-#### 7.1.1 Adaptive Intelligence
-
-- **Dynamic Neural Networks**: Implement conditional execution where simple materials (obvious metals) bypass computationally expensive CV processing
-- **Online Learning**: System adaptation to new material types without complete retraining
-- **Predictive Maintenance**: ML-based sensor degradation prediction and preemptive calibration
-
-#### 7.1.2 Enhanced Sensor Integration
-
-- **Near-Infrared (NIR) Spectroscopy**: Plastic polymer identification (PET vs. HDPE vs. PP)
-- **Electromagnetic Induction (EMI)**: Enhanced metal alloy discrimination
-- **Weight Sensing**: Load cells for density-based classification support
-- **Acoustic Analysis**: Material identification through drop sound patterns
-
-### 7.2 Scalability Considerations
-
-#### 7.2.1 Industrial Adaptation
-
-- **Multi-stream Processing**: Parallel conveyor lines for higher throughput
-- **Edge Computing Cluster**: Distributed processing for complex material streams
-- **Robotic Integration**: Articulated arms for 3D object manipulation
-- **Quality Assurance**: Downstream verification and feedback systems
-
-#### 7.2.2 Commercial Applications
-
-- **Municipal Recycling**: Integration with existing waste management infrastructure
-- **Manufacturing QC**: Component sorting in production environments
-- **E-waste Processing**: Specialized sensors for electronic component recovery
-- **Agricultural Sorting**: Adaptation for food processing applications
-
-### 7.3 Research Contributions
-
-This project advances the state-of-the-art in automated sorting through:
-
-- **Cost-effective Multi-sensor Fusion**: Demonstrating industrial-grade accuracy at educational price points
-- **Real-time Edge Computing**: Optimized ML inference for resource-constrained environments
-- **Modular Architecture**: Framework for adding new sensor modalities without system redesign
-- **Educational Impact**: Practical demonstration of Industry 4.0 technologies
-
----
-
-## 8. Conclusion
-
-This automated waste sorting system represents a practical implementation of multi-sensor fusion technology, balancing academic rigor with real-world applicability. By leveraging industrial principles from established systems like TOMRA's AUTOSORT™ and STEINERT's sensor technologies, the design achieves significant cost reduction while maintaining educational value.
-
-The proposed system's modular architecture ensures scalability for future enhancements, while the comprehensive validation methodology provides confidence in achieving target performance metrics. The project serves dual purposes: demonstrating advanced automation principles in an educational context and providing a foundation for commercial-scale development.
-
-**Key Achievements:**
-
-- Cost-effective implementation under $375
-- Multi-modal sensor fusion with >85% accuracy
-- Real-time processing capability
-- Educational demonstration of Industry 4.0 concepts
-- Scalable architecture for future development
-
-The successful completion of this project will contribute valuable insights to the fields of automated sorting, sensor fusion, and edge computing while providing a practical platform for ongoing research and development in sustainable waste management technologies.e sensing to classify and sort recyclable materials (glass, metal, plastic, and paper) with high accuracy and cost-effectiveness. Drawing inspiration from industrial systems like TOMRA's AUTOSORT™ and STEINERT's sensor technologies, this university-scale prototype prioritizes modularity, affordability, and educational value while maintaining practical applicability.
+This document presents the design and implementation plan for an automated waste sorting system utilizing multi-sensor fusion technology. The system combines computer vision, capacitive sensing, and ind
 
 ## 1. System Overview
 
@@ -71,7 +13,6 @@ The proposed system employs **multi-sensor fusion** architecture integrating com
 - Multi-modal sensor integration for enhanced accuracy
 - Real-time processing with edge computing capabilities
 - Modular design allowing for future sensor additions
-- Cost-effective implementation under $300
 - Educational platform for demonstrating Industry 4.0 concepts
 
 ---
@@ -209,16 +150,16 @@ while material_detected:
 
 | **Component**         | **Specification**        | **Quantity** | **Unit Cost** | **Total Cost** |
 | --------------------- | ------------------------ | ------------ | ------------- | -------------- |
-| Raspberry Pi 4B       | 4GB RAM + microSD        | 1            | R?           | R?            |
-| Camera Module         | 8MP, 1080p, CSI          | 1            | R?           | R?            |
-| Inductive Sensor      | M18, 8mm range, NPN      | 1            | R?           | R?            |
-| Capacitive Sensor     | M18, 15mm range, analog  | 1            | R?           | R?            |
-| Arduino Nano          | ATmega328P, USB          | 1            | R?           | R?            |
-| Conveyor System       | Belt + motor + frame     | 1            | R?          | R?           |
-| Pneumatic System      | Solenoid valves + tubing | 4            | R?           | R?            |
-| Power Supplies        | 24V/5A, 5V/3A            | 2            | R?           | R?            |
-| Miscellaneous         | Wiring, mounts, bins     | -            | R?           | R?            |
-| **Total System Cost** |                          |              |               | **R?**       |
+| Raspberry Pi 4B       | 4GB RAM + microSD        | 1            | R?            | R?             |
+| Camera Module         | 8MP, 1080p, CSI          | 1            | R?            | R?             |
+| Inductive Sensor      | M18, 8mm range, NPN      | 1            | R?            | R?             |
+| Capacitive Sensor     | M18, 15mm range, analog  | 1            | R?            | R?             |
+| Arduino Nano          | ATmega328P, USB          | 1            | R?            | R?             |
+| Conveyor System       | Belt + motor + frame     | 1            | R?            | R?             |
+| Pneumatic System      | Solenoid valves + tubing | 4            | R?            | R?             |
+| Power Supplies        | 24V/5A, 5V/3A            | 2            | R?            | R?             |
+| Miscellaneous         | Wiring, mounts, bins     | -            | R?            | R?             |
+| **Total System Cost** |                          |              |               | **R?**         |
 
 ---
 
@@ -312,6 +253,65 @@ while material_detected:
 - **Throughput**: 5-10 items/minute sustained operation
 - **Power Consumption**: <50W total system power
 - **Calibration Stability**: <2% drift over 8-hour operation
+
+## 7. Innovation and Future Development
+
+### 7.1 Advanced Features for Future Implementation
+
+#### 7.1.1 Adaptive Intelligence
+
+- **Dynamic Neural Networks**: Implement conditional execution where simple materials (obvious metals) bypass computationally expensive CV processing
+- **Online Learning**: System adaptation to new material types without complete retraining
+- **Predictive Maintenance**: ML-based sensor degradation prediction and preemptive calibration
+
+#### 7.1.2 Enhanced Sensor Integration
+
+- **Near-Infrared (NIR) Spectroscopy**: Plastic polymer identification (PET vs. HDPE vs. PP)
+- **Electromagnetic Induction (EMI)**: Enhanced metal alloy discrimination
+- **Weight Sensing**: Load cells for density-based classification support
+- **Acoustic Analysis**: Material identification through drop sound patterns
+
+### 7.2 Scalability Considerations
+
+#### 7.2.1 Industrial Adaptation
+
+- **Multi-stream Processing**: Parallel conveyor lines for higher throughput
+- **Edge Computing Cluster**: Distributed processing for complex material streams
+- **Robotic Integration**: Articulated arms for 3D object manipulation
+- **Quality Assurance**: Downstream verification and feedback systems
+
+#### 7.2.2 Commercial Applications
+
+- **Municipal Recycling**: Integration with existing waste management infrastructure
+- **Manufacturing QC**: Component sorting in production environments
+- **E-waste Processing**: Specialized sensors for electronic component recovery
+- **Agricultural Sorting**: Adaptation for food processing applications
+
+### 7.3 Research Contributions
+
+This project advances the state-of-the-art in automated sorting through:
+
+- **Cost-effective Multi-sensor Fusion**: Demonstrating industrial-grade accuracy at educational price points
+- **Real-time Edge Computing**: Optimized ML inference for resource-constrained environments
+- **Modular Architecture**: Framework for adding new sensor modalities without system redesign
+- **Educational Impact**: Practical demonstration of Industry 4.0 technologies
+
+---
+
+## 8. Conclusion
+
+This automated waste sorting system represents a practical implementation of multi-sensor fusion technology, balancing academic rigor with real-world applicability. By leveraging industrial principles from established systems like TOMRA's AUTOSORT™ and STEINERT's sensor technologies, the design achieves significant cost reduction while maintaining educational value.
+
+The proposed system's modular architecture ensures scalability for future enhancements, while the comprehensive validation methodology provides confidence in achieving target performance metrics. The project serves dual purposes: demonstrating advanced automation principles in an educational context and providing a foundation for commercial-scale development.
+
+**Key Achievements:**
+
+- Multi-modal sensor fusion with >85% accuracy
+- Real-time processing capability
+- Educational demonstration of Industry 4.0 concepts
+- Scalable architecture for future development
+
+The successful completion of this project will contribute valuable insights to the fields of automated sorting, sensor fusion, and edge computing while providing a practical platform for ongoing research and development in sustainable waste management technologies.e sensing to classify and sort recyclable materials (glass, metal, plastic, and paper) with high accuracy and cost-effectiveness. Drawing inspiration from industrial systems like TOMRA's AUTOSORT™ and STEINERT's sensor technologies, this university-scale prototype prioritizes modularity, affordability, and educational value while maintaining practical applicability.
 
 ---
 
